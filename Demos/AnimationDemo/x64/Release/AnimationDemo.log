@@ -1,0 +1,4 @@
+﻿  Mover.cpp
+F:\Works\GameEngine\Demos\AnimationDemo\Mover.cpp(23,10): fatal error C1083: 无法打开包括文件: “Graphics/AnimatedModel.h”: No such file or directory
+  SkeletalAnimation.cpp
+F:\Works\GameEngine\Demos\AnimationDemo\SkeletalAnimation.cpp(23,10): fatal error C1083: 无法打开包括文件: “Core/CoreEvents.h”: No such file or directory

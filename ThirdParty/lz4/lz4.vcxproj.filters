@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="include">
+      <UniqueIdentifier>{a7eb2869-ca9c-4032-be54-5d96b187894a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src">
+      <UniqueIdentifier>{67f45539-b23e-4dbc-bea4-a59497618e86}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="include\lz4.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\lz4hc.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\lz4opt.h">
+      <Filter>include</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="src\lz4.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\lz4hc.c">
+      <Filter>src</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>

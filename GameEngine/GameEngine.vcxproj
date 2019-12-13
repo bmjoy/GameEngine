@@ -1,0 +1,558 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Audio\Audio.h" />
+    <ClInclude Include="Audio\AudioDefs.h" />
+    <ClInclude Include="Audio\AudioEvents.h" />
+    <ClInclude Include="Audio\BufferedSoundStream.h" />
+    <ClInclude Include="Audio\OggVorbisSoundStream.h" />
+    <ClInclude Include="Audio\Sound.h" />
+    <ClInclude Include="Audio\SoundListener.h" />
+    <ClInclude Include="Audio\SoundSource.h" />
+    <ClInclude Include="Audio\SoundSource3D.h" />
+    <ClInclude Include="Audio\SoundStream.h" />
+    <ClInclude Include="Base\Algorithm.h" />
+    <ClInclude Include="Base\Iter.h" />
+    <ClInclude Include="Container\Allocator.h" />
+    <ClInclude Include="Container\ArrayPtr.h" />
+    <ClInclude Include="Container\FlagSet.h" />
+    <ClInclude Include="Container\ForEach.h" />
+    <ClInclude Include="Container\Hash.h" />
+    <ClInclude Include="Container\HashBase.h" />
+    <ClInclude Include="Container\HashMap.h" />
+    <ClInclude Include="Container\HashSet.h" />
+    <ClInclude Include="Container\LinkedList.h" />
+    <ClInclude Include="Container\List.h" />
+    <ClInclude Include="Container\ListBase.h" />
+    <ClInclude Include="Container\Pair.h" />
+    <ClInclude Include="Container\Ptr.h" />
+    <ClInclude Include="Container\RefCounted.h" />
+    <ClInclude Include="Container\Sort.h" />
+    <ClInclude Include="Container\Str.h" />
+    <ClInclude Include="Container\Swap.h" />
+    <ClInclude Include="Container\Vector.h" />
+    <ClInclude Include="Container\VectorBase.h" />
+    <ClInclude Include="Core\Attribute.h" />
+    <ClInclude Include="Core\Condition.h" />
+    <ClInclude Include="Core\Context.h" />
+    <ClInclude Include="Core\CoreEvents.h" />
+    <ClInclude Include="Core\EventProfiler.h" />
+    <ClInclude Include="Core\Main.h" />
+    <ClInclude Include="Core\MiniDump.h" />
+    <ClInclude Include="Core\Mutex.h" />
+    <ClInclude Include="Core\Object.h" />
+    <ClInclude Include="Core\ProcessUtils.h" />
+    <ClInclude Include="Core\Profiler.h" />
+    <ClInclude Include="Core\Spline.h" />
+    <ClInclude Include="Core\StringHashRegister.h" />
+    <ClInclude Include="Core\StringUtils.h" />
+    <ClInclude Include="Core\Thread.h" />
+    <ClInclude Include="Core\Timer.h" />
+    <ClInclude Include="Core\Variant.h" />
+    <ClInclude Include="Core\WorkQueue.h" />
+    <ClInclude Include="Engine\Application.h" />
+    <ClInclude Include="Engine\Console.h" />
+    <ClInclude Include="Engine\DebugHud.h" />
+    <ClInclude Include="Engine\Engine.h" />
+    <ClInclude Include="Engine\EngineDefs.h" />
+    <ClInclude Include="Engine\EngineEvents.h" />
+    <ClInclude Include="Graphics\AnimatedModel.h" />
+    <ClInclude Include="Graphics\Animation.h" />
+    <ClInclude Include="Graphics\AnimationController.h" />
+    <ClInclude Include="Graphics\AnimationState.h" />
+    <ClInclude Include="Graphics\Batch.h" />
+    <ClInclude Include="Graphics\BillboardSet.h" />
+    <ClInclude Include="Graphics\Camera.h" />
+    <ClInclude Include="Graphics\ConstantBuffer.h" />
+    <ClInclude Include="Graphics\CustomGeometry.h" />
+    <ClInclude Include="Graphics\DebugRenderer.h" />
+    <ClInclude Include="Graphics\DecalSet.h" />
+    <ClInclude Include="Graphics\Drawable.h" />
+    <ClInclude Include="Graphics\DrawableEvents.h" />
+    <ClInclude Include="Graphics\Geometry.h" />
+    <ClInclude Include="Graphics\GPUObject.h" />
+    <ClInclude Include="Graphics\Graphics.h" />
+    <ClInclude Include="Graphics\GraphicsDefs.h" />
+    <ClInclude Include="Graphics\GraphicsEvents.h" />
+    <ClInclude Include="Graphics\GraphicsImpl.h" />
+    <ClInclude Include="Graphics\IndexBuffer.h" />
+    <ClInclude Include="Graphics\Light.h" />
+    <ClInclude Include="Graphics\Material.h" />
+    <ClInclude Include="Graphics\Model.h" />
+    <ClInclude Include="Graphics\OcclusionBuffer.h" />
+    <ClInclude Include="Graphics\Octree.h" />
+    <ClInclude Include="Graphics\OctreeQuery.h" />
+    <ClInclude Include="Graphics\OpenGL\OGLGraphicsImpl.h" />
+    <ClInclude Include="Graphics\OpenGL\OGLShaderProgram.h" />
+    <ClInclude Include="Graphics\ParticleEffect.h" />
+    <ClInclude Include="Graphics\ParticleEmitter.h" />
+    <ClInclude Include="Graphics\Renderer.h" />
+    <ClInclude Include="Graphics\RenderPath.h" />
+    <ClInclude Include="Graphics\RenderSurface.h" />
+    <ClInclude Include="Graphics\RibbonTrail.h" />
+    <ClInclude Include="Graphics\Shader.h" />
+    <ClInclude Include="Graphics\ShaderPrecache.h" />
+    <ClInclude Include="Graphics\ShaderProgram.h" />
+    <ClInclude Include="Graphics\ShaderVariation.h" />
+    <ClInclude Include="Graphics\Skeleton.h" />
+    <ClInclude Include="Graphics\Skybox.h" />
+    <ClInclude Include="Graphics\StaticModel.h" />
+    <ClInclude Include="Graphics\StaticModelGroup.h" />
+    <ClInclude Include="Graphics\Tangent.h" />
+    <ClInclude Include="Graphics\Technique.h" />
+    <ClInclude Include="Graphics\Terrain.h" />
+    <ClInclude Include="Graphics\TerrainPatch.h" />
+    <ClInclude Include="Graphics\Texture.h" />
+    <ClInclude Include="Graphics\Texture2D.h" />
+    <ClInclude Include="Graphics\Texture2DArray.h" />
+    <ClInclude Include="Graphics\Texture3D.h" />
+    <ClInclude Include="Graphics\TextureCube.h" />
+    <ClInclude Include="Graphics\VertexBuffer.h" />
+    <ClInclude Include="Graphics\VertexDeclaration.h" />
+    <ClInclude Include="Graphics\View.h" />
+    <ClInclude Include="Graphics\Viewport.h" />
+    <ClInclude Include="Graphics\Zone.h" />
+    <ClInclude Include="Input\Controls.h" />
+    <ClInclude Include="Input\Input.h" />
+    <ClInclude Include="Input\InputConstants.h" />
+    <ClInclude Include="Input\InputEvents.h" />
+    <ClInclude Include="IO\AbstractFile.h" />
+    <ClInclude Include="IO\Compression.h" />
+    <ClInclude Include="IO\Deserializer.h" />
+    <ClInclude Include="IO\File.h" />
+    <ClInclude Include="IO\FileSystem.h" />
+    <ClInclude Include="IO\FileWatcher.h" />
+    <ClInclude Include="IO\IOEvents.h" />
+    <ClInclude Include="IO\Log.h" />
+    <ClInclude Include="IO\MacFileWatcher.h" />
+    <ClInclude Include="IO\MemoryBuffer.h" />
+    <ClInclude Include="IO\NamedPipe.h" />
+    <ClInclude Include="IO\PackageFile.h" />
+    <ClInclude Include="IO\RWOpsWrapper.h" />
+    <ClInclude Include="IO\Serializer.h" />
+    <ClInclude Include="IO\VectorBuffer.h" />
+    <ClInclude Include="Math\AreaAllocator.h" />
+    <ClInclude Include="Math\BoundingBox.h" />
+    <ClInclude Include="Math\Color.h" />
+    <ClInclude Include="Math\Frustum.h" />
+    <ClInclude Include="Math\MathDefs.h" />
+    <ClInclude Include="Math\Matrix2.h" />
+    <ClInclude Include="Math\Matrix3.h" />
+    <ClInclude Include="Math\Matrix3x4.h" />
+    <ClInclude Include="Math\Matrix4.h" />
+    <ClInclude Include="Math\Plane.h" />
+    <ClInclude Include="Math\Polyhedron.h" />
+    <ClInclude Include="Math\Quaternion.h" />
+    <ClInclude Include="Math\Random.h" />
+    <ClInclude Include="Math\Ray.h" />
+    <ClInclude Include="Math\Rect.h" />
+    <ClInclude Include="Math\Sphere.h" />
+    <ClInclude Include="Math\StringHash.h" />
+    <ClInclude Include="Math\Vector2.h" />
+    <ClInclude Include="Math\Vector3.h" />
+    <ClInclude Include="Math\Vector4.h" />
+    <ClInclude Include="Physics\CollisionShape.h" />
+    <ClInclude Include="Physics\Constraint.h" />
+    <ClInclude Include="Physics\PhysicsEvents.h" />
+    <ClInclude Include="Physics\PhysicsUtils.h" />
+    <ClInclude Include="Physics\PhysicsWorld.h" />
+    <ClInclude Include="Physics\RaycastVehicle.h" />
+    <ClInclude Include="Physics\RigidBody.h" />
+    <ClInclude Include="Resource\BackgroundLoader.h" />
+    <ClInclude Include="Resource\Decompress.h" />
+    <ClInclude Include="Resource\Image.h" />
+    <ClInclude Include="Resource\JSONFile.h" />
+    <ClInclude Include="Resource\JSONValue.h" />
+    <ClInclude Include="Resource\Localization.h" />
+    <ClInclude Include="Resource\PListFile.h" />
+    <ClInclude Include="Resource\Resource.h" />
+    <ClInclude Include="Resource\ResourceCache.h" />
+    <ClInclude Include="Resource\ResourceEvents.h" />
+    <ClInclude Include="Resource\XMLElement.h" />
+    <ClInclude Include="Resource\XMLFile.h" />
+    <ClInclude Include="Scene\Animatable.h" />
+    <ClInclude Include="Scene\AnimationDefs.h" />
+    <ClInclude Include="Scene\Component.h" />
+    <ClInclude Include="Scene\LogicComponent.h" />
+    <ClInclude Include="Scene\Node.h" />
+    <ClInclude Include="Scene\ObjectAnimation.h" />
+    <ClInclude Include="Scene\ReplicationState.h" />
+    <ClInclude Include="Scene\Scene.h" />
+    <ClInclude Include="Scene\SceneEvents.h" />
+    <ClInclude Include="Scene\SceneResolver.h" />
+    <ClInclude Include="Scene\Serializable.h" />
+    <ClInclude Include="Scene\SmoothedTransform.h" />
+    <ClInclude Include="Scene\SplinePath.h" />
+    <ClInclude Include="Scene\UnknownComponent.h" />
+    <ClInclude Include="Scene\ValueAnimation.h" />
+    <ClInclude Include="Scene\ValueAnimationInfo.h" />
+    <ClInclude Include="UI\BorderImage.h" />
+    <ClInclude Include="UI\Button.h" />
+    <ClInclude Include="UI\CheckBox.h" />
+    <ClInclude Include="UI\Cursor.h" />
+    <ClInclude Include="UI\DropDownList.h" />
+    <ClInclude Include="UI\FileSelector.h" />
+    <ClInclude Include="UI\Font.h" />
+    <ClInclude Include="UI\FontFace.h" />
+    <ClInclude Include="UI\FontFaceBitmap.h" />
+    <ClInclude Include="UI\FontFaceFreeType.h" />
+    <ClInclude Include="UI\LineEdit.h" />
+    <ClInclude Include="UI\ListView.h" />
+    <ClInclude Include="UI\Menu.h" />
+    <ClInclude Include="UI\MessageBox.h" />
+    <ClInclude Include="UI\ProgressBar.h" />
+    <ClInclude Include="UI\ScrollBar.h" />
+    <ClInclude Include="UI\ScrollView.h" />
+    <ClInclude Include="UI\Slider.h" />
+    <ClInclude Include="UI\Sprite.h" />
+    <ClInclude Include="UI\Text.h" />
+    <ClInclude Include="UI\Text3D.h" />
+    <ClInclude Include="UI\ToolTip.h" />
+    <ClInclude Include="UI\UI.h" />
+    <ClInclude Include="UI\UIBatch.h" />
+    <ClInclude Include="UI\UIComponent.h" />
+    <ClInclude Include="UI\UIElement.h" />
+    <ClInclude Include="UI\UIEvents.h" />
+    <ClInclude Include="UI\UISelectable.h" />
+    <ClInclude Include="UI\View3D.h" />
+    <ClInclude Include="UI\Window.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Audio\Audio.cpp" />
+    <ClCompile Include="Audio\BufferedSoundStream.cpp" />
+    <ClCompile Include="Audio\OggVorbisSoundStream.cpp" />
+    <ClCompile Include="Audio\Sound.cpp" />
+    <ClCompile Include="Audio\SoundListener.cpp" />
+    <ClCompile Include="Audio\SoundSource.cpp" />
+    <ClCompile Include="Audio\SoundSource3D.cpp" />
+    <ClCompile Include="Audio\SoundStream.cpp" />
+    <ClCompile Include="Container\Allocator.cpp" />
+    <ClCompile Include="Container\HashBase.cpp" />
+    <ClCompile Include="Container\RefCounted.cpp" />
+    <ClCompile Include="Container\Str.cpp" />
+    <ClCompile Include="Container\Swap.cpp" />
+    <ClCompile Include="Container\VectorBase.cpp" />
+    <ClCompile Include="Core\Condition.cpp" />
+    <ClCompile Include="Core\Context.cpp" />
+    <ClCompile Include="Core\EventProfiler.cpp" />
+    <ClCompile Include="Core\MiniDump.cpp" />
+    <ClCompile Include="Core\Mutex.cpp" />
+    <ClCompile Include="Core\Object.cpp" />
+    <ClCompile Include="Core\ProcessUtils.cpp" />
+    <ClCompile Include="Core\Profiler.cpp" />
+    <ClCompile Include="Core\Spline.cpp" />
+    <ClCompile Include="Core\StringHashRegister.cpp" />
+    <ClCompile Include="Core\StringUtils.cpp" />
+    <ClCompile Include="Core\Thread.cpp" />
+    <ClCompile Include="Core\Timer.cpp" />
+    <ClCompile Include="Core\Variant.cpp" />
+    <ClCompile Include="Core\WorkQueue.cpp" />
+    <ClCompile Include="Engine\Application.cpp" />
+    <ClCompile Include="Engine\Console.cpp" />
+    <ClCompile Include="Engine\DebugHud.cpp" />
+    <ClCompile Include="Engine\Engine.cpp" />
+    <ClCompile Include="Graphics\AnimatedModel.cpp" />
+    <ClCompile Include="Graphics\Animation.cpp" />
+    <ClCompile Include="Graphics\AnimationController.cpp" />
+    <ClCompile Include="Graphics\AnimationState.cpp" />
+    <ClCompile Include="Graphics\Batch.cpp" />
+    <ClCompile Include="Graphics\BillboardSet.cpp" />
+    <ClCompile Include="Graphics\Camera.cpp" />
+    <ClCompile Include="Graphics\ConstantBuffer.cpp" />
+    <ClCompile Include="Graphics\CustomGeometry.cpp" />
+    <ClCompile Include="Graphics\DebugRenderer.cpp" />
+    <ClCompile Include="Graphics\DecalSet.cpp" />
+    <ClCompile Include="Graphics\Drawable.cpp" />
+    <ClCompile Include="Graphics\Geometry.cpp" />
+    <ClCompile Include="Graphics\GPUObject.cpp" />
+    <ClCompile Include="Graphics\Graphics.cpp" />
+    <ClCompile Include="Graphics\GraphicsDefs.cpp" />
+    <ClCompile Include="Graphics\IndexBuffer.cpp" />
+    <ClCompile Include="Graphics\Light.cpp" />
+    <ClCompile Include="Graphics\Material.cpp" />
+    <ClCompile Include="Graphics\Model.cpp" />
+    <ClCompile Include="Graphics\OcclusionBuffer.cpp" />
+    <ClCompile Include="Graphics\Octree.cpp" />
+    <ClCompile Include="Graphics\OctreeQuery.cpp" />
+    <ClCompile Include="Graphics\OpenGL\OGLConstantBuffer.cpp" />
+    <ClCompile Include="Graphics\OpenGL\OGLGraphics.cpp" />
+    <ClCompile Include="Graphics\OpenGL\OGLIndexBuffer.cpp" />
+    <ClCompile Include="Graphics\OpenGL\OGLRenderSurface.cpp" />
+    <ClCompile Include="Graphics\OpenGL\OGLShaderProgram.cpp" />
+    <ClCompile Include="Graphics\OpenGL\OGLShaderVariation.cpp" />
+    <ClCompile Include="Graphics\OpenGL\OGLTexture.cpp" />
+    <ClCompile Include="Graphics\OpenGL\OGLTexture2D.cpp" />
+    <ClCompile Include="Graphics\OpenGL\OGLTexture2DArray.cpp" />
+    <ClCompile Include="Graphics\OpenGL\OGLTexture3D.cpp" />
+    <ClCompile Include="Graphics\OpenGL\OGLTextureCube.cpp" />
+    <ClCompile Include="Graphics\OpenGL\OGLVertexBuffer.cpp" />
+    <ClCompile Include="Graphics\ParticleEffect.cpp" />
+    <ClCompile Include="Graphics\ParticleEmitter.cpp" />
+    <ClCompile Include="Graphics\Renderer.cpp" />
+    <ClCompile Include="Graphics\RenderPath.cpp" />
+    <ClCompile Include="Graphics\RenderSurface.cpp" />
+    <ClCompile Include="Graphics\RibbonTrail.cpp" />
+    <ClCompile Include="Graphics\Shader.cpp" />
+    <ClCompile Include="Graphics\ShaderPrecache.cpp" />
+    <ClCompile Include="Graphics\ShaderVariation.cpp" />
+    <ClCompile Include="Graphics\Skeleton.cpp" />
+    <ClCompile Include="Graphics\Skybox.cpp" />
+    <ClCompile Include="Graphics\StaticModel.cpp" />
+    <ClCompile Include="Graphics\StaticModelGroup.cpp" />
+    <ClCompile Include="Graphics\Tangent.cpp" />
+    <ClCompile Include="Graphics\Technique.cpp" />
+    <ClCompile Include="Graphics\Terrain.cpp" />
+    <ClCompile Include="Graphics\TerrainPatch.cpp" />
+    <ClCompile Include="Graphics\Texture.cpp" />
+    <ClCompile Include="Graphics\Texture2D.cpp" />
+    <ClCompile Include="Graphics\Texture2DArray.cpp" />
+    <ClCompile Include="Graphics\Texture3D.cpp" />
+    <ClCompile Include="Graphics\TextureCube.cpp" />
+    <ClCompile Include="Graphics\VertexBuffer.cpp" />
+    <ClCompile Include="Graphics\View.cpp" />
+    <ClCompile Include="Graphics\Viewport.cpp" />
+    <ClCompile Include="Graphics\Zone.cpp" />
+    <ClCompile Include="Input\Controls.cpp" />
+    <ClCompile Include="Input\Input.cpp" />
+    <ClCompile Include="IO\Compression.cpp" />
+    <ClCompile Include="IO\Deserializer.cpp" />
+    <ClCompile Include="IO\File.cpp" />
+    <ClCompile Include="IO\FileSystem.cpp" />
+    <ClCompile Include="IO\FileWatcher.cpp" />
+    <ClCompile Include="IO\Log.cpp" />
+    <ClCompile Include="IO\MemoryBuffer.cpp" />
+    <ClCompile Include="IO\NamedPipe.cpp" />
+    <ClCompile Include="IO\PackageFile.cpp" />
+    <ClCompile Include="IO\Serializer.cpp" />
+    <ClCompile Include="IO\VectorBuffer.cpp" />
+    <ClCompile Include="Math\AreaAllocator.cpp" />
+    <ClCompile Include="Math\BoundingBox.cpp" />
+    <ClCompile Include="Math\Color.cpp" />
+    <ClCompile Include="Math\Frustum.cpp" />
+    <ClCompile Include="Math\MathDefs.cpp" />
+    <ClCompile Include="Math\Matrix2.cpp" />
+    <ClCompile Include="Math\Matrix3.cpp" />
+    <ClCompile Include="Math\Matrix3x4.cpp" />
+    <ClCompile Include="Math\Matrix4.cpp" />
+    <ClCompile Include="Math\Plane.cpp" />
+    <ClCompile Include="Math\Polyhedron.cpp" />
+    <ClCompile Include="Math\Quaternion.cpp" />
+    <ClCompile Include="Math\Random.cpp" />
+    <ClCompile Include="Math\Ray.cpp" />
+    <ClCompile Include="Math\Rect.cpp" />
+    <ClCompile Include="Math\Sphere.cpp" />
+    <ClCompile Include="Math\StringHash.cpp" />
+    <ClCompile Include="Math\Vector2.cpp" />
+    <ClCompile Include="Math\Vector3.cpp" />
+    <ClCompile Include="Math\Vector4.cpp" />
+    <ClCompile Include="Physics\CollisionShape.cpp" />
+    <ClCompile Include="Physics\Constraint.cpp" />
+    <ClCompile Include="Physics\PhysicsWorld.cpp" />
+    <ClCompile Include="Physics\RaycastVehicle.cpp" />
+    <ClCompile Include="Physics\RigidBody.cpp" />
+    <ClCompile Include="Resource\BackgroundLoader.cpp" />
+    <ClCompile Include="Resource\Decompress.cpp" />
+    <ClCompile Include="Resource\Image.cpp" />
+    <ClCompile Include="Resource\JSONFile.cpp" />
+    <ClCompile Include="Resource\JSONValue.cpp" />
+    <ClCompile Include="Resource\Localization.cpp" />
+    <ClCompile Include="Resource\PListFile.cpp" />
+    <ClCompile Include="Resource\Resource.cpp" />
+    <ClCompile Include="Resource\ResourceCache.cpp" />
+    <ClCompile Include="Resource\XMLElement.cpp" />
+    <ClCompile Include="Resource\XMLFile.cpp" />
+    <ClCompile Include="Scene\Animatable.cpp" />
+    <ClCompile Include="Scene\Component.cpp" />
+    <ClCompile Include="Scene\LogicComponent.cpp" />
+    <ClCompile Include="Scene\Node.cpp" />
+    <ClCompile Include="Scene\ObjectAnimation.cpp" />
+    <ClCompile Include="Scene\Scene.cpp" />
+    <ClCompile Include="Scene\SceneResolver.cpp" />
+    <ClCompile Include="Scene\Serializable.cpp" />
+    <ClCompile Include="Scene\SmoothedTransform.cpp" />
+    <ClCompile Include="Scene\SplinePath.cpp" />
+    <ClCompile Include="Scene\UnknownComponent.cpp" />
+    <ClCompile Include="Scene\ValueAnimation.cpp" />
+    <ClCompile Include="Scene\ValueAnimationInfo.cpp" />
+    <ClCompile Include="UI\BorderImage.cpp" />
+    <ClCompile Include="UI\Button.cpp" />
+    <ClCompile Include="UI\CheckBox.cpp" />
+    <ClCompile Include="UI\Cursor.cpp" />
+    <ClCompile Include="UI\DropDownList.cpp" />
+    <ClCompile Include="UI\FileSelector.cpp" />
+    <ClCompile Include="UI\Font.cpp" />
+    <ClCompile Include="UI\FontFace.cpp" />
+    <ClCompile Include="UI\FontFaceBitmap.cpp" />
+    <ClCompile Include="UI\FontFaceFreeType.cpp" />
+    <ClCompile Include="UI\LineEdit.cpp" />
+    <ClCompile Include="UI\ListView.cpp" />
+    <ClCompile Include="UI\Menu.cpp" />
+    <ClCompile Include="UI\MessageBox.cpp" />
+    <ClCompile Include="UI\ProgressBar.cpp" />
+    <ClCompile Include="UI\ScrollBar.cpp" />
+    <ClCompile Include="UI\ScrollView.cpp" />
+    <ClCompile Include="UI\Slider.cpp" />
+    <ClCompile Include="UI\Sprite.cpp" />
+    <ClCompile Include="UI\Text.cpp" />
+    <ClCompile Include="UI\Text3D.cpp" />
+    <ClCompile Include="UI\ToolTip.cpp" />
+    <ClCompile Include="UI\UI.cpp" />
+    <ClCompile Include="UI\UIBatch.cpp" />
+    <ClCompile Include="UI\UIComponent.cpp" />
+    <ClCompile Include="UI\UIElement.cpp" />
+    <ClCompile Include="UI\UISelectable.cpp" />
+    <ClCompile Include="UI\View3D.cpp" />
+    <ClCompile Include="UI\Window.cpp" />
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>16.0</VCProjectVersion>
+    <ProjectGuid>{9540C54E-0519-4462-A3EA-38C3A8BFC2AA}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>GameEngine</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <LinkIncremental>true</LinkIncremental>
+    <IntDir>$(SolutionDir)Obj\$(Platform)\$(ProjectName)\$(Configuration)\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;URHO3D_PHYSICS;URHO3D_THREADING;HAVE_STDINT_H;URHO3D_IS_BUILDING;GLEW_STATIC;GLEW_NO_GLU;HAVE_RTL_OSVERSIONINFOW;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+      <AdditionalIncludeDirectories>.\;..\ThirdParty\sdl\include;..\ThirdParty\stb\include;..\ThirdParty\libcpuid\include;..\ThirdParty\glew\include;..\ThirdParty\lz4\include;..\ThirdParty\Bullet\include;..\ThirdParty\StanHull\include;..\ThirdParty\rapidjson\include;..\ThirdParty\PugiXml\include;..\ThirdParty\FreeType\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>NDEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

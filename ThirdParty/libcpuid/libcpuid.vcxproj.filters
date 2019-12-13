@@ -1,0 +1,75 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="include">
+      <UniqueIdentifier>{0ef44b4e-3113-4161-ac72-eab506c71c1c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src">
+      <UniqueIdentifier>{44ab27c7-d76d-4a52-b5ea-f179d6df855c}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="include\amd_code_t.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\asm-bits.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\intel_code_t.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\libcpuid.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\libcpuid_constants.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\libcpuid_internal.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\libcpuid_types.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\libcpuid_util.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\rdtsc.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\recog_amd.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\recog_intel.h">
+      <Filter>include</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="src\asm-bits.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\cpuid_main.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libcpuid_util.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\msrdriver.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\rdmsr.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\rdtsc.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\recog_amd.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\recog_intel.c">
+      <Filter>src</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="src\masm-x64.asm" />
+  </ItemGroup>
+</Project>
