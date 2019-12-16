@@ -13,7 +13,7 @@ subject to the following restrictions:
 */
 
 
-#include "btThreads.h"
+#include "LinearMath/btThreads.h"
 
 //
 // Lightweight spin-mutex based on atomics

@@ -93,7 +93,7 @@
     <Link>
       <SubSystem>Windows</SubSystem>
       <GenerateDebugInformation>true</GenerateDebugInformation>
-      <AdditionalDependencies>..\..\x64\Debug\GameEngine.lib;winmm.lib;imm32.lib;version.lib;setupapi.lib;opengl32.lib;..\..\x64\Debug\GLEW.lib;..\..\x64\Debug\SDL.lib;..\..\x64\Debug\Bullet.lib;..\..\x64\Debug\PugiXml.lib;..\..\x64\Debug\LibCpuId.lib;..\..\x64\Debug\LZ4.lib;..\..\x64\Debug\StanHull.lib;..\..\x64\Debug\FreeType.lib;..\..\x64\Debug\ETCPACK.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>..\..\x64\Debug\GameEngine.lib;winmm.lib;imm32.lib;version.lib;setupapi.lib;opengl32.lib;..\..\x64\Debug\glew.lib;..\..\x64\Debug\SDL.lib;..\..\x64\Debug\Bullet.lib;..\..\x64\Debug\PugiXml.lib;..\..\x64\Debug\LibCpuId.lib;..\..\x64\Debug\LZ4.lib;..\..\x64\Debug\StanHull.lib;..\..\x64\Debug\FreeType.lib;..\..\x64\Debug\ETCPACK.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">

@@ -17,7 +17,7 @@ subject to the following restrictions:
 #define BT_USE_SSE_IN_API
 #endif
 
-#include "btMultiSphereShape.h"
+#include "BulletCollision/CollisionShapes/btMultiSphereShape.h"
 #include "BulletCollision/CollisionShapes/btCollisionMargin.h"
 #include "LinearMath/btQuaternion.h"
 #include "LinearMath/btSerializer.h"

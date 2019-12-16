@@ -42,7 +42,11 @@
     <ClCompile Include="src\recog_intel.c" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="src\masm-x64.asm" />
+    <CustomBuild Include="src\masm-x64.asm">
+      <FileType>Document</FileType>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">ml64 /Fo $(IntDir)%(fileName).obj /c $(ProjectDir)src/%(fileName).asm</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(IntDir)%(fileName).obj</Outputs>
+    </CustomBuild>
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>

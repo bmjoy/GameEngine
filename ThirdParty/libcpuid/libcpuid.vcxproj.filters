@@ -70,6 +70,6 @@
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <None Include="src\masm-x64.asm" />
+    <CustomBuild Include="src\masm-x64.asm" />
   </ItemGroup>
 </Project>

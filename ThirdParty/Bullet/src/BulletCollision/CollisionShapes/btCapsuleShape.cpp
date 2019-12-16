@@ -14,7 +14,7 @@ subject to the following restrictions:
 */
 
 
-#include "btCapsuleShape.h"
+#include "BulletCollision/CollisionShapes/btCapsuleShape.h"
 
 #include "LinearMath/btQuaternion.h"
 
